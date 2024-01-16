@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raspal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c54d21825e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="portfolioimage/logo1.png" class="logo" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
+                <ul id="sidemenu"data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <!-- <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Raspal Yadav</span><br> From India</h1>
+            </div> -->
+
+        </div>
+    </div>
+    <div id="carousel-container"data-aos="fade-up"
+    data-aos-duration="3000">
+        <!-- <button id="prevBtn" onclick="prevSlide()">&#10094;</button> -->
+        <div id="carousel">
+            <div class="carousel-item"><img src="portfolioimage/photo.jpg" alt="Photo 1"></div>
+            <div class="carousel-item"> <video autoplay loop muted width="100%">
+                <source src="portfolioimage/carousal.mp4" type="video/mp4">
+            </video></div>
+        </div>
+        <!-- <button id="nextBtn" onclick="nextSlide()">&#10095;</button> -->
+    </div>
+
+    <!------------------------------------ <video start> ----------------------------------->
+<!-- 
+    <div class="container-fluid" data-aos="fade-up"
+    data-aos-duration="3000">
+        <video autoplay loop muted width="100%">
+            <source src="portfolioimage/portfolio.mp4" type="video/mp4">
+        </video>
+    </div> -->
+
+    <!-------------------------------- <video end> ----------------------------------------->
+    <!-- <about> -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500" >
+                    <img src="portfolioimage/parth1.jpg">
+                </div>
+                <div class="about-col-2"data-aos="fade-up"
+                data-aos-duration="3000">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I'm Raspal Yadav, a seasoned web developer with a passion for turning concepts into
+                        captivating digital experiences. My coding journey has been marked by a commitment to innovation
+                        and a meticulous approach to creating functional and visually appealing websites.
+
+                        Beyond the digital realm, I'm an avid traveler, finding inspiration in the diversity of cultures
+                        and landscapes. My love for exploration fuels creativity, bringing a unique perspective to my
+                        web development projects. Whether it's coding a website or exploring a new destination, I thrive
+                        on the excitement of discovery and the endless possibilities that both worlds offer.
+
+                        Join me on this dynamic journey where technology and wanderlust converge, creating a blend of
+                        skills and experiences that shape not only my professional endeavors but also the way I perceive
+                        and engage with the world.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Website Developer</span><br>Front-end and Backend Developer</li>
+                            <li><span>Maintenance</span><br>Website Maintenance</li>
+                            <li><span>Youtuber</span><br>Making Creative Videos On Youtube</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023</span><br>Full-Stack Course in VSIT Coding Institute.</li>
+                            <li><span>2021-2022</span><br>Team Management and Work.</li>
+                            <li><span>2020</span><br>Make Website On Wordpress.</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2025</span><br>On Progress BCA from DU</li>
+                            <li><span>2022</span><br>12th from IPS School</li>
+                            <li><span>2020</span><br>10th from RKC School</li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------services----------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">My Services</h1>
+            <div class="services-list"data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+                <div>
+                    <i class="fa-solid fa-user"></i>
+                    <h2>Portfolio</h2>
+                    <p>"Crafting impactful portfolios that showcase your skills and achievements. Our web development
+                        service ensures a visually appealing and seamlessly functional online presence, elevating your
+                        professional image and leaving a lasting impression."</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Single-Page Website</h2>
+                    <p>"Unleash the power of simplicity with our single-page website service. We, as web developers,
+                        specialize in creating concise, impactful online presences that captivate visitors, delivering
+                        your message effectively in one seamless scroll."</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Front-end Development</h2>
+                    <p>"Elevate user experiences with our front-end web development service. We specialize in crafting
+                        visually stunning and responsive websites that not only captivate users but also ensure seamless
+                        functionality across devices, leaving a lasting impression."</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <!-- <h1 class="sub-title">My Services</h1> -->
+            <div class="services-list"data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2  >Backend Development</h2>
+                    <p>"Empower your digital infrastructure with our backend web development service. We specialize in
+                        robust, scalable, and efficient solutions that form the backbone of your website, ensuring
+                        seamless functionality and data management behind the scenes."</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                    <h2>Ecommerce Website</h2>
+                    <p>"Revolutionize your online business with our E-commerce web development. We specialize in
+                        creating visually appealing, user-friendly platforms that seamlessly integrate secure payment
+                        gateways, ensuring a smooth and delightful shopping experience for your customers."</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-wrench"></i>
+                    <h2>Website Maintenance</h2>
+                    <p>"Safeguard your online presence with our website maintenance service. We provide timely updates,
+                        security enhancements, and content optimization to ensure your website stays responsive, secure,
+                        and aligned with the latest industry standards."</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- --------portfolio-------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"data-aos="fade-up"
+            data-aos-duration="3000">My Work</h1>
+            <div class="work-list"data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+                <div class="work">
+                    <img src="portfolioimage/work01.jpg">
+                    <div class="layer">
+                        <h3>Portfolio</h3>
+                        <p>"I create unique portfolios highlighting your skills and accomplishments. Let me shape your
+                            online identity with a visually compelling and effective showcase."</p>
+                        <a href="https://github.com/Raspalkharshaniya/portfoliowebsite"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="portfolioimage/work02.png">
+                    <div class="layer">
+                        <h3>Backend Project</h3>
+                        <p>"I engineer robust and scalable backend solutions, crafting a seamless digital infrastructure
+                            tailored to meet your project's unique requirements and goals."</p>
+                        <a href="https://github.com/Raspalkharshaniya/nodejs"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="portfolioimage/work03.jpg">
+                    <div class="layer">
+                        <h3>Ecommerce Project</h3>
+                        <p>"I specialize in developing feature-rich ecommerce projects, delivering secure and
+                            user-friendly online stores tailored to elevate your business and customer experience."</p>
+                        <a href="https://github.com/Raspalkharshaniya/nodejs"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Raspalkharshaniya/nodejs" class="btn"data-aos="fade-up"
+            data-aos-duration="3000">See More</a>
+        </div>
+    </div>
+ <!-- freelancer -->
+
+ <div id="freelancer"data-aos="fade-up"
+ data-aos-duration="3000">
+    <div class="container-fluid">
+        <h2 data-aos="fade-up"
+        data-aos-duration="3000">You Have Any Projects ?</h2>
+        <h1 data-aos="fade-up"
+        data-aos-duration="3000">I'm Also Availabe On <span>freelancer</span></h1>
+        <a href="https://www.freelancer.com/u/parthrao800" class="btn"data-aos="fade-up"
+        data-aos-duration="3000">Hire Me</a>
+    </div>
+ </div>
+
+    <!-- ---------contact------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">Contact-Me</h1>
+                    <p data-aos="fade-up"
+                    data-aos-duration="3000"><i class="fa-solid fa-paper-plane"></i>raspalkharshania@gmail.com</p>
+                    <p data-aos="fade-up"
+                    data-aos-duration="3000"><i class="fa-solid fa-phone"></i>91+8930031140</p>
+                    <div class="social-icons"data-aos="fade-up"
+                    data-aos-duration="3000">
+                        <a href="https://www.instagram.com/parth_kharshaniya?igsh=NjlwOHMwZ2o2M2Zz&utm_source=qr"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/Raspalkharshan"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61555498741159&mibextid=LQQJ4d"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="http://linkedin.com/in/raspal-yadav-b268972a9"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="portfolioimage/raspal-cv.pdf" download class="btn btn2"data-aos="fade-up"
+                    data-aos-duration="3000">Download CV</a>
+                </div>
+                <div class="contact-right"data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" class="contact-coloum" required >
+                        <input type="email" name="Email" placeholder="Your Email" class="contact-coloum" required >
+                        <textarea name="Message" rows="6" placeholder="Your Message" class="contact-coloum" ></textarea>
+                        <button type="submit" class="btn btn2"data-aos="fade-up"
+                        data-aos-duration="3000">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- testimonial -->
+
+    <div class="topic">
+        <h1 class=""data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"> Our Reviews</h1>
+        <div class="tests">
+            <div class="testimonial-slider"data-aos="fade-up"
+            data-aos-duration="3000">
+                <div class="testimonial" id="testimonial1">
+                    <img src="portfolioimage/person1.jpg" alt="Profile 1" class="profile-picture">
+                    <div>
+                        <i class="fa-solid fa-star" style="color: #ff004f;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff004f;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff004f;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff004f;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff004f;"></i>
+                    </div>
+                    <p>"Exceptional web developer! Meticulous, creative, and prompt. Transformed our ideas into a polished, user-friendly website. Exceeded expectations, highly recommended for their expertise and professionalism."</p>
+                    <p class="author">- Tarun Yadav</p>
+                </div>
+                <div class="testimonial" id="testimonial2">
+                    <img src="portfolioimage/person2.jpg" alt="Profile 2" class="profile-picture">
+                    <div>
+                        <i class="fa-solid fa-star" style="color: #ff004f;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff004f;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff004f;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff004f;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff004f;"></i>
+                    </div>
+                    <p>"Exemplary web developer! Brilliant, efficient, and transformed our vision into an impressive online reality. A pleasure to collaborate with—highly recommend for top-tier expertise and exceptional results."</p>
+                    <p class="author">- Pratistha Jain</p>
+                </div>
+                <div class="testimonial" id="testimonial3">
+                    <img src="portfolioimage/person3.png" alt="Profile 3" class="profile-picture">
+                    <div>
+                        <i class="fa-solid fa-star" style="color: #ff004f;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff004f;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff004f;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff004f;"></i>
+                        <i class="fa-solid fa-star" style="color: #ff004f;"></i>
+                    </div>
+                    <p>"Top-notch web developer! Transcends expectations with a perfect blend of creativity and technical skill. A true professional who turns ideas into digital masterpieces. Highly recommended for unparalleled expertise."</p>
+                    <p class="author">- Ridhi Yadav</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container"data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+            <h3>Raspal Yadav</h3>
+            <p>A Certified Website Developer as well as a Youtuber who help people to Grow and make Money with him.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/parth_kharshaniya?igsh=NjlwOHMwZ2o2M2Zz&utm_source=qr"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/Raspalkharshan"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61555498741159&mibextid=LQQJ4d"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="http://linkedin.com/in/raspal-yadav-b268972a9"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; Copyright <strong><span>RaspalPortfolio</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+
+                Designed by <span>Raspal Yadav</span>
+            </div>
+        </div>
+    </footer>
+
+    <!---------------------------------- End Footer ----------------------------->
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw5_knmk13xC4idBHtM-gcIf6NDGTSPCx9DsxRHVo574H30G_vLfdf2I__7YOWUsjD-MA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let currentTestimonial = 1;
+
+            function showTestimonial(index) {
+                document.querySelectorAll('.testimonial').forEach(testimonial => {
+                    testimonial.style.display = 'none';
+                });
+
+                document.getElementById(`testimonial${index}`).style.display = 'block';
+            }
+
+            function nextTestimonial() {
+                currentTestimonial++;
+                if (currentTestimonial > 3) {
+                    currentTestimonial = 1;
+                }
+                showTestimonial(currentTestimonial);
+            }
+
+            setInterval(nextTestimonial, 5000); // Change testimonial every 5 seconds
+            showTestimonial(currentTestimonial);
+        });
+    </script>
+    <script>
+        let currentSlide = 0;
+        const totalSlides = document.querySelectorAll('.carousel-item').length;
+    
+        function showSlide(index) {
+            if (index < 0) {
+                currentSlide = totalSlides - 1;
+            } else if (index >= totalSlides) {
+                currentSlide = 0;
+            } else {
+                currentSlide = index;
+            }
+    
+            const carousel = document.getElementById('carousel');
+            const newTransformValue = -currentSlide * 100 + '%';
+            carousel.style.transform = 'translateX(' + newTransformValue + ')';
+        }
+    
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+    
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+    
+        setInterval(nextSlide, 4000); // Autoplay every 3 seconds
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+      </script>
+
+</body>
+
+</html>
